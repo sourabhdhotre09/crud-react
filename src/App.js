@@ -6,6 +6,7 @@ import Create from './Component/Create';
 import Header from './Component/Header';
 import Update from './Component/Update';
 import ShowData from './Component/ShowData';
+import Homepage from './Component/Homepage';
 
 function App() {
   const [updateValue, setUpdateValue] = useState('');
@@ -19,7 +20,8 @@ function App() {
     <>
       <Header/>
         <Routes>
-          <Route exact path='/' element={<Create/>}/>
+          <Route path='/' element={<Homepage/>}/>
+          <Route path='/create' element={<Create/>}/>
           <Route path={`/update/${updateValue}`} element={<Update updateid={updateValue}/>}/>
           <Route path='/show-data' element={<ShowData sendDataToParent={handleDataFromChild}/>}/>
         </Routes>
