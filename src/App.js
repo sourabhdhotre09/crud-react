@@ -19,8 +19,9 @@ function App() {
   return (
     <>
       <Header/>
+      {/* <Homepage/> */}
         <Routes>
-          <Route path='/' element={<Homepage/>}/>
+          <Route path='/crud-react' element={<Homepage/>}/>
           <Route path='/create' element={<Create/>}/>
           <Route path={`/update/${updateValue}`} element={<Update updateid={updateValue}/>}/>
           <Route path='/show-data' element={<ShowData sendDataToParent={handleDataFromChild}/>}/>

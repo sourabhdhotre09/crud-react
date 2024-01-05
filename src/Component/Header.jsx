@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <Navbar expand="lg" className="bg-body-tertiary">
             <Navbar.Brand>
-                <NavLink className="nav-link" to="/">
+                <NavLink className="nav-link" to="/crud-react">
                     CRUD Project
                 </NavLink>
             </Navbar.Brand>
