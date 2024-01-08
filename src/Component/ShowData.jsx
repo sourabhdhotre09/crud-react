@@ -69,7 +69,7 @@ const ShowData = ({sendDataToParent}) => {
                                         <td>{eachData.email}</td>
                                         <td>{eachData.age}</td>
                                         <td>
-                                            <Link to={`/update/${eachData.id}`} onClick={()=>sendDataToParent(eachData.id)} className='btn btn-secondary m-1'>Update</Link>
+                                            <Link to={`/update/${eachData.id}`}className='btn btn-secondary m-1'>Update</Link>
                                             <button onClick={()=>toggleShow(eachData.id)} className='btn btn-danger m-1'>Delete</button>
                                         </td>
                                     </tr>
