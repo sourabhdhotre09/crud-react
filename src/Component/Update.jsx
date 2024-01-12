@@ -14,7 +14,7 @@ const Update = () => {
         age:''
     })
 
-    console.log(param.id);
+    console.log(param);
 
 
     const navigate = useNavigate();
